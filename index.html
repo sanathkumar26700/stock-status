@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stock Status</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Stock Status</h1>
+            <form>
+                <h3>Purchase Price (₹)</h3><input id="purchase-price" type="number" min="0" step="0.01" required oninput="validity.valid||(value='');">
+                <h3>Purchase Quantity</h3>
+                <input id="purchase-qty" type="number" min="1" required oninput="validity.valid||(value='');">
+                <h3>Current Price (₹)</h3>
+                <input id="current-price" type="number" min="0"  step="0.01" required oninput="validity.valid||(value='');">
+                <button id="btn-check" type="button">Check Status</button>
+            </form>
+            <div id="spinner"></div>
+            <div class="txt-output"></div>
+        </div>
+        <img src="/images/thinking-batman.gif" class="img-desktop" id="img-desktop-normal">
+        <img src="/images/happy-batman.gif" class="img-desktop hidden" id="img-desktop-happy">
+        <img src="/images/Batman-Sad-In-The-Rain-Reaction-Gif.gif" class="img-desktop hidden" id="img-desktop-sad">
+        <div class ="contacts">
+            <ul class="list-bulletless nav-pills social-links">
+                <li><a href="https://twitter.com/sanathkumar267?s=08"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="https://github.com/sanathkumar26700"><i class="ion-social-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sanath-kumar-g-v-317206193"><i class="ion-social-linkedin"></i></a></li>
+            </ul>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
