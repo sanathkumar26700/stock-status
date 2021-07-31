@@ -24,7 +24,7 @@ const calculatePorL = (purchasePrice, purchaseQty, currentPrice) => {
         document.querySelector("#img-desktop-normal").classList.remove('hidden');
         document.querySelector("#img-desktop-happy").classList.remove('hidden');
         document.querySelector(".container").style.background = "linear-gradient(to right, var(--green) 60%, var(--lightestCream) 60%)";
-        txtOutput.innerHTML = `🎉 YaaaaaaY!!! <br/>You lost ${profitLossPercentage}%  which is ₹${profitLoss}.`;
+        txtOutput.innerHTML = `🎉 YaaaaaaY!!! <br/>You gained ${profitLossPercentage}%  which is ₹${profitLoss}.`;
     } else {
         //loss
         let priceDifference = (purchasePrice - currentPrice);

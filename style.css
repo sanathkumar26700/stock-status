@@ -89,8 +89,8 @@ input {
 }
 
 .txt-output {
-    font-size: 2.5rem;
-    background-color: rgba(255, 255, 255, 0.226); 
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.226); 
 }
 
 /* ----------------------------------Footer--------------------------------------------- */
@@ -151,7 +151,7 @@ input {
     }
     .txt-output{
         margin-top: 1rem;
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
     .content {
         top: 25%;
