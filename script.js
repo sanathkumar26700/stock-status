@@ -21,7 +21,8 @@ const calculatePorL = (purchasePrice, purchaseQty, currentPrice) => {
         let priceDifference = (currentPrice - purchasePrice);
         let profitLoss = priceDifference * purchaseQty;
         let profitLossPercentage = ((priceDifference / purchasePrice) * 100).toFixed(2);
-        document.querySelector("#img-desktop-normal").classList.remove('hidden');
+        document.querySelector("#img-desktop-normal").classList.add('hidden');
+        document.querySelector("#img-desktop-sad").classList.add('hidden');
         document.querySelector("#img-desktop-happy").classList.remove('hidden');
         document.querySelector(".container").style.background = "linear-gradient(to right, var(--green) 60%, var(--lightestCream) 60%)";
         txtOutput.innerHTML = `🎉 YaaaaaaY!!! <br/>You gained ${profitLossPercentage}%  which is ₹${profitLoss}.`;
