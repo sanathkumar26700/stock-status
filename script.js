@@ -6,7 +6,7 @@ const checkStatus = () => {
     const purchaseQty = parseInt(document.querySelector("#purchase-qty").value);
     const currentPrice = parseInt(document.querySelector("#current-price").value);
     if (isNaN(purchasePrice) || isNaN(purchaseQty) || isNaN(currentPrice)) {
-        txtOutput.innerHTML = 'Inputs cannot be left blank!!<br/>Please, try again.'
+        txtOutput.innerHTML = 'Inputs cannot be left blank!!<br/>Please, try again.';
     } else {
         txtOutput.classList.add('hidden');
         calculatePorL(purchasePrice, purchaseQty, currentPrice);
